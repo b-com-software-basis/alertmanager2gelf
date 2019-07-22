@@ -1,0 +1,9 @@
+[Unit]
+Description=Alertmanager2gelf service
+After=syslog.target network.target
+
+[Service]
+User=alertmanager
+ExecStart=/usr/local/bin/alertmanager2gelf
+
+[Install]
