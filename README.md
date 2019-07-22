@@ -39,3 +39,18 @@ Then:
     systemctl daemon-reload
     systemctl start alertmanager2gelf
     systemctl status alertmanager2gelf
+
+
+## Alertmanager integration
+
+Add *alertmanager2gelf* receiver to alertmanager.
+
+In /etc/alertmanager/alertmanager.yml file:
+
+    receivers:
+    - name: 'my-team'
+        webhook_configs:
+        - send_resolved: true
+            url: 'http://localhost:5001'
+
+Then restart alertmanager service.
