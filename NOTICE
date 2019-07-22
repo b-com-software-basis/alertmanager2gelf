@@ -1,0 +1,4 @@
+alertmanager2gelf uses the following librairies under MIT License:
+- "github.com/spf13/viper"
+- "github.com/tidwall/gjson"
+- "gopkg.in/Graylog2/go-gelf.v1/gelf"
