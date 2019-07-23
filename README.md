@@ -54,3 +54,7 @@ In /etc/alertmanager/alertmanager.yml file:
             url: 'http://localhost:5001'
 
 Then restart alertmanager service.
+
+## Graylog dashboard example
+
+![Graylog dashboard example](graylog-dashboard.png "Graylog dashboard example")
