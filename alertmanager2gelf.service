@@ -7,3 +7,4 @@ User=alertmanager
 ExecStart=/usr/local/bin/alertmanager2gelf
 
 [Install]
+WantedBy=multi-user.target
